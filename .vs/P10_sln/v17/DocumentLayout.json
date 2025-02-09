@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\P10_sln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|c:\\users\\admin\\downloads\\p10_sln\\p10\\views\\shared\\_addmodule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|solutionrelative:p10\\views\\shared\\_addmodule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|c:\\users\\admin\\downloads\\p10_sln\\p10\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|solutionrelative:p10\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|c:\\users\\admin\\downloads\\p10_sln\\p10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|solutionrelative:p10\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|c:\\users\\admin\\downloads\\p10_sln\\p10\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|solutionrelative:p10\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|c:\\users\\admin\\downloads\\p10_sln\\p10\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF114D33-81E1-4763-BD8D-6D68C25DE76D}|P10\\P10.csproj|solutionrelative:p10\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 133,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_AddModule.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\Shared\\_AddModule.cshtml",
+              "RelativeDocumentMoniker": "P10\\Views\\Shared\\_AddModule.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\Shared\\_AddModule.cshtml",
+              "RelativeToolTip": "P10\\Views\\Shared\\_AddModule.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T14:02:15.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "P10\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "P10\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T14:02:07.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "P10\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "P10\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T13:59:04.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "P10\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "P10\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T13:58:39.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "P10\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\P10_sln\\P10\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "P10\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T13:44:47.46Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

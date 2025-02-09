@@ -1,0 +1,115 @@
+﻿@model P10.ViewModel.StudentViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="CF" asp-action="Create" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="form-group">
+                <label asp-for="StudentName" class="control-label"></label>
+                <input asp-for="StudentName" class="form-control" />
+                <span asp-validation-for="StudentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dob" class="control-label"></label>
+                <input asp-for="Dob" class="form-control" />
+                <span asp-validation-for="Dob" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MobileNo" class="control-label"></label>
+                <input asp-for="MobileNo" class="form-control" />
+                <span asp-validation-for="MobileNo" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsEnrolled" /> @Html.DisplayNameFor(model => model.IsEnrolled)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseName" class="control-label"></label><br />
+                <select asp-for="CourseId" asp-items="@(new SelectList(Model.Courses,"CourseId","CourseName"))" class="form-control">
+                    <option value="0">Select Course</option>
+                </select>
+                <span asp-validation-for="CourseId" class="text-danger"></span>
+            </div>
+            <div>
+                <input type="file" id="ProfileFile" onchange="readUrl(this)" />
+                <img id="ImageFile" src="~/images/" alt="Alternate Text" width="" />
+
+            </div>
+        </div>
+        <div>
+            @Html.Partial("_AddModule", Model.Modules)
+            <div>
+                <button onclick="AddModule" type="button" class="btn btn-info">Add Module</button>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <input type="submit"  value="Create" class="btn btn-success" />
+            <a asp-action="Index" asp-controller="Students"></a>
+        <a asp-action="Index">Back to List</a>
+        
+    </div>
+</form>
+<script src="~/jquery/jquery.min.js"></script>
+<script>
+    function readUrl(i) {
+        if (i.files && i.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#ImageFile").attr('src', e.target.result);
+            }
+            reader.readAsDataURL(i.files[0])
+        }
+    }
+    function DeleteItem(btn) {
+        $(btn).closest('tr').remove();
+    }
+
+    function AddModule() {
+        var lastRowIndex = parseInt($("#HIndex").val());
+        var newRow = `
+            <tr>
+                <td>
+                    <input type="text" name="Modules[${lastRowIndex}].ModuleName"/>
+                </td>
+                <td>
+                    <input type="number" name="Modules[${lastRowIndex}].Duration" />
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger" onclick="DeleteItem(this)">Remove</button>
+                </td>
+            </tr>`;
+        $("#ExT tbody").append(newRow);
+        $("#HIndex").val(lastRowIndex + 1);
+    }
+
+    $("#CF").submit(function (event) {
+        event.preventDefault();
+        var fData = new FormData(this);
+        $.ajax({
+            type: "post",
+            url: "/Students/Create",
+            contentType: false,
+            processData: false,
+            data: fData,
+            success: function (data) {
+                alert(`Created`);
+                window.location.href = "/Students/Index";
+            },
+
+            error: function (err) {
+                alert(`Error`);
+
+            }
+        })
+    })
+</script>
+
+

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.P10.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.P10.props",
+      "PackagePath": "build\\P10.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.P10.props",
+      "PackagePath": "buildMultiTargeting\\P10.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.P10.props",
+      "PackagePath": "buildTransitive\\P10.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

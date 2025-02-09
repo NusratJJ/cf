@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "NuAp/QG3d1VBRkqqJMNcDiKwaRBYUqvAzY1gU/gtXVY=",
+  "Source": "P10",
+  "BasePath": "_content/P10",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "P10\\wwwroot",
+      "Source": "P10",
+      "ContentRoot": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\",
+      "BasePath": "_content/P10",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\bootstrap\\css\\bootstrap.min.css",
+      "SourceId": "P10",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\",
+      "BasePath": "_content/P10",
+      "RelativePath": "bootstrap/css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\bootstrap\\js\\bootstrap.min.js",
+      "SourceId": "P10",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\",
+      "BasePath": "_content/P10",
+      "RelativePath": "bootstrap/js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\jquery\\jquery.min.js",
+      "SourceId": "P10",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Nusrat_61\\ASP.NetCore\\P10_sln\\P10\\wwwroot\\",
+      "BasePath": "_content/P10",
+      "RelativePath": "jquery/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery\\jquery.min.js"
+    }
+  ]
+}
