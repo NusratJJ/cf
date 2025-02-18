@@ -1,0 +1,134 @@
+﻿@model CoreWeb.ViewModels.StudentViewModels
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<div class="table table-bordered table-striped">
+   
+    <h2><b>Add New Student</b></h2>
+    <hr />
+    <form id="CF" asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="StudentName" class="control-label"></label>
+                    <input asp-for="StudentName" class="form-control" />
+                    <span asp-validation-for="StudentName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Dob" class="control-label"></label>
+                    <input asp-for="Dob" class="form-control" />
+                    <span asp-validation-for="Dob" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CourseFee" class="control-label"></label>
+                    <input asp-for="CourseFee" class="form-control" />
+                    <span asp-validation-for="CourseFee" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsEnrolled" /> @Html.DisplayNameFor(model => model.IsEnrolled)
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CourseName" class="control-label"></label><br />
+                    <select asp-for="CourseId" asp-items="@(new SelectList(Model.Courses,"CourseId","CourseName"))" class="form-control">
+                        <option value="0">Select Course</option>
+                    </select>
+                    <span asp-validation-for="CourseId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.ProfileFile, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <input type="file" id="ProfileFile" name="ProfileFile" class="invisible" onchange="readUrl(this)" /><br />
+                        <img id="ImageFile" src="~/images/" alt="Alternate Text" width="70" />
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <button type="button" onclick="AddModule()" class="btn btn-warning float-end">Add Module</button>
+                <div class="Modcontainer">
+                    @Html.Partial("_AddModule", Model.Modules)
+                </div>
+                <div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-info float-start" />
+                    </div>
+                    <div>
+                        <a asp-action="Index" asp-controller="Students" class="btn btn-primary float-end">Back to List</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+<hr />
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<script>
+    function readUrl(i) {
+        if (i.files && i.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#ImageFile").attr('src',e.target.result);
+            }
+            reader.readAsDataURL(i.files[0])
+        }
+    }
+    function DeleteItem(btn) {
+        $(btn).closest('tr').remove();
+    }
+
+    function AddModule() {
+        var lastRowIndex = parseInt($("#HID").val());
+        var newRow = `
+        <tr>
+            <td>
+                <input type="text" name="Modules[${lastRowIndex}].ModuleName"/>
+            </td>
+            <td>
+                <input type="number" name="Modules[${lastRowIndex}].Duration" />
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger" onclick="DeleteItem(this)">Remove</button>
+            </td>
+        </tr>`;
+        $("#TxB tbody").append(newRow);
+        $("#HID").val(lastRowIndex+1);
+    }
+
+     $("#CF").submit(function (event) {
+        event.preventDefault();
+        var fData = new FormData(this);
+        $.ajax({
+            type: "post",
+            url: "/Students/Create",
+            contentType: false,
+            processData: false,
+            data: fData,
+            success: function (data) {
+                alert(`Created`);
+                window.location.href = "/Students/Index";
+            },
+
+            error: function (err) {
+                alert(`Error`);
+
+            }
+        })
+    })
+</script>
+@await Component.InvokeAsync("HeadCount")
+
+
